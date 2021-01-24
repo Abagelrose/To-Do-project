@@ -1,0 +1,192 @@
+.toDo{
+    &__items{
+        display: inline-block;
+        font-size: $font-sm;
+        padding: 0;
+        color: var(--mediumfontColor);
+        @include breakpoint-up(large){
+            font-size: 0.6875rem;
+        }
+    }
+
+    &__clear{
+        display: inline-block;
+        font-size: $font-sm;
+        padding: 0;
+        border-radius: 0;
+        color: var(--mediumfontColor);
+
+        &:hover{
+          
+            color: var(--darkfontColor);
+        }
+
+        &:hover::before{
+            opacity: 0;
+        }
+
+        @include breakpoint-up(large){
+            font-size: 0.6875rem;
+        }
+    }
+
+    &__ending{
+        padding-right: 24px;
+        padding-left: 24px;
+        
+        width: 20.5625rem;
+        height: 3.125rem;
+        position: relative;
+        
+        margin-bottom: 0;
+        background: var(--bgfont);
+        
+        background-position: center;
+        
+        overflow: hidden;
+        box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+        transition: all 150ms ease-in-out;
+
+        border-bottom-left-radius: 0.3125rem;
+        border-bottom-right-radius: 0.3125rem;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        @include breakpoint-up(medium){
+            min-width: 26.5625rem;
+            height: 3.125rem;
+        }  
+    }
+    
+    
+
+    
+
+
+    &__allbuttons1{
+       
+        height: 3.125rem;
+        position: relative;
+        margin-top:0;
+        margin-bottom: 0;
+        border-radius: 0.3125rem;
+        background: var(--bgfont);
+        
+        background-position: center;
+        
+        overflow: hidden;
+        width: 0;
+        height: 0;
+
+        @include breakpoint-up(large){
+            min-width: 8.5625rem;
+            height: 3.125rem;
+        }   
+    }
+
+    
+    &__allbuttons2{
+       
+        padding-right: 3.125rem;
+        padding-left: 3.125rem;
+        width: 20.5625rem;
+        height: 3.125rem;
+        position: relative;
+        margin-top: 1.125rem;
+        margin-bottom: 0;
+        border-radius: 0.3125rem;
+        background: var(--bgfont);
+        
+        background-position: center;
+        
+        overflow: hidden;
+        box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+        transition: all 150ms ease-in-out;
+        
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        @include breakpoint-up(medium){
+            min-width: 26.5625rem;
+            height: 3.125rem;
+        }  
+        
+        @include breakpoint-up(large){
+            margin-top:0;
+            width: 0;
+            height: 0;
+        } 
+    }
+
+    &__all{
+        display: inline-block;
+        font-size: $font-sm;
+        padding: 0;
+        font-weight: 700;
+        color: $brightBlue;
+
+        @include breakpoint-up(large){
+            font-size: 0.6875rem;
+        }
+    }
+
+    &__allbtn{
+        display: inline-block;
+        font-size: $font-sm;
+        border-radius: 0;
+        padding: 0;
+        font-weight: 700;
+        color: var(--mediumfontColor);
+
+        &:hover{
+          
+            color:var(--darkfontColor);
+        }
+
+        &:hover::before{
+            opacity: 0;
+        }
+
+        @include breakpoint-up(large){
+            font-size: 0.6875rem;
+        }
+        
+    }
+
+    &__footer{
+        max-width: 26.5625rem;
+        
+        width: 100%;
+        
+        position: relative;
+        margin-top: 2.625rem;
+        margin-bottom: 0;
+        
+        overflow: hidden;
+        
+        transition: all 150ms ease-in-out;
+        
+        &:hover{
+            transform: scale(1.05);
+        }
+        
+
+    }
+
+    
+
+    &__nomove{
+        cursor: auto;
+        
+    }
+
+}
+
+.nothing{
+    height: 0;
+    width: 0;
+    border: none;
+}

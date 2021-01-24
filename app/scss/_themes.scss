@@ -1,0 +1,52 @@
+
+:root {
+    --veryLightGray: hsl(0, 0%, 98%);
+    --veryLightGrayishBlue: hsl(236, 33%, 92%);
+    --lightGrayishBlue1: hsl(233, 11%, 84%);
+    --darkGrayishBlue1: hsl(236, 9%, 61%);
+    --veryDarkGrayishBlue1: hsl(235, 19%, 35%);
+    --mobilelight: url('/images/bg-mobile-light.jpg');
+    --desktoplight: url('/images/bg-desktop-light.jpg');
+    --fill_light: url('/images/fill-light.svg');
+    --icon-light: url('/images/icon-moon.svg');
+//Dark Themes
+    --veryDarkBlue: hsl(235, 21%, 11%);
+    --veryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+    --lightGrayishBlue2: hsl(234, 39%, 85%);
+    --lightGrayishBlue3: hsl(236, 33%, 92%); //(hover)
+    --darkGrayishBlue2: hsl(234, 11%, 52%);
+    --veryDarkGrayishBlue1: hsl(233, 14%, 35%);
+    --veryDarkGrayishBlue2: hsl(237, 14%, 26%);
+    --mobiledark: url('/images/bg-mobile-dark.jpg');
+    --desktopdark: url('/images/bg-desktop-dark.jpg');
+    --fill_dark: url('/images/fill-dark.svg');
+    --icon-dark: url('/images/icon-sun.svg')
+    
+
+  }
+
+.light-theme{
+    --bg:var(--veryLightGrayishBlue);
+    --bgfont:var(--veryLightGray);
+    --lightfontColor:var(--lightGrayishBlue1);
+    --mediumfontColor: var(--darkGrayishBlue1);
+    --darkfontColor: var(--veryDarkGrayishBlue1);
+    --borderColor: var( --veryDarkGrayishBlue1);
+    --moblieimg: var(--mobilelight);
+    --desktopimg: var(--desktoplight);
+    --fill: var(--fill_light);
+    --icon: var(--icon-light);
+}
+
+.dark-theme {
+    --bg: var(--veryDarkBlue);
+    --bgfont:var(--veryDarkDesaturatedBlue);
+    --lightfontColor:var( --veryDarkGrayishBlue1);
+    --mediumfontColor: var(--darkGrayishBlue2);
+    --darkfontColor: var(--lightGrayishBlue3);
+    --borderColor: var(  --lightGrayishBlue2);
+    --moblieimg: var(--mobiledark);
+    --desktopimg: var(--desktopdark);
+    --fill: var(--fill_dark);
+    --icon: var(--icon-dark)
+  }

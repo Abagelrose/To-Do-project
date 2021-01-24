@@ -1,0 +1,126 @@
+
+
+html{
+    font-size: 100%;
+    box-sizing:border-box;
+
+    
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+    height: 100%;
+    font-family:Josefin Sans ;
+    background-color: var(--bg);
+}
+
+//Spacing
+.container{
+    
+    margin: 0 auto;
+
+    &--pall{
+        padding-top: 3.125rem;
+        padding-right: 1.5rem;
+        padding-bottom: 7.875rem;
+        padding-left: 1.5rem;
+
+        @include breakpoint-up(medium){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+
+
+    &--py{
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+        @include breakpoint-up(large){
+            
+        }
+    }
+
+    &--px{
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+    
+   &--pt{
+       padding-top: 4.375rem;
+       @include breakpoint-up(large){
+        padding-top: 6rem;
+    }
+   }
+
+   &--pr{
+    padding-right: 1.25rem;
+    }
+
+    &--pb{
+        padding-bottom: 4.375rem;
+        @include breakpoint-up(large){
+            padding-bottom: 6rem;
+        }
+    }
+
+    &--pl{
+        padding-left: 1.25rem;
+    }
+}
+
+h2{
+    margin: 0;
+}
+
+//Flexbox
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+}
+
+//Buttons
+button, .button{
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 2.1875rem;
+    
+    
+    border-radius: 50px;
+    cursor: pointer;
+    
+    font-weight:400;
+    font-size: $font-sm;
+    transition: opacity 300ms ease-in-out;
+    overflow: hidden;
+   
+    &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(255,255,255, 0.25);
+            opacity: 0;
+            transition: opacity 150ms ease-in-out;
+        }
+	
+}

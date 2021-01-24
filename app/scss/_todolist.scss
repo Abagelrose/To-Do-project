@@ -1,0 +1,200 @@
+.toDo{
+
+    
+ &__list{
+    width: 20.5625rem;
+        height: 100%;
+        display: grid;
+        position: relative;
+        div:first-child{
+            border-top-left-radius: 0.3125rem;
+            border-top-right-radius: 0.3125rem;
+        }
+        @include breakpoint-up(medium){
+            min-width: 26.5625rem;
+           
+        }  
+
+        
+    }
+    &__item{
+        padding-left: 1.375rem;
+        width: 20.5625rem;
+        height: 3.125rem;
+        
+        
+        
+        margin-bottom: 0;
+        background: var(--bgfont);
+        
+        background-position: center;
+        
+        overflow: hidden;
+        box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+        transition: all 150ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+            .toDo__deletebtn { background-image: 
+    url("/images/icon-cross.svg"); }
+
+        }
+        @include breakpoint-up(medium){
+            min-width: 26.5625rem;
+            height: 3.125rem;
+        }  
+    }
+
+    &__cta{
+        /*display: inline-block;
+        
+        
+       
+        background-image: 
+        url("/images/icon-check.svg"),
+        linear-gradient(to right, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        background-repeat: no-repeat;
+        background-position: center;
+        border-color:$veryDarkGrayishBlue;
+        border-width: 0.125rem;
+        width: 1.1875rem;
+        height: 1.1875rem;
+        padding: 0;
+        */
+        display: inline-block;
+        /*background-image: 
+        url("/images/icon-check.svg"),
+        linear-gradient(to right, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        padding: 0;
+        border-top-color:var(--borderColor);
+        border-bottom-color: var(--borderColor);
+        border-left-color:var(--borderColor);
+        border-right-color: var(--borderColor);
+        border-width: 0.125rem;
+        
+        min-width: 1.1875rem;
+        height: 1.1875rem;
+
+        transition: all 150ms ease-in-out;
+
+        
+
+        &:hover{
+            flex-shrink: 0;
+            
+            height: 19px;
+            width: 19px;
+            border: 0.125rem solid transparent;
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            background-size: cover;
+            box-sizing: border-box;
+            
+
+            border-radius: 50%;
+	        background-image: var(--img-url), linear-gradient(to right, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+            }
+        
+        }
+      
+    
+    &__fix{
+        width:100%  
+    }
+   
+    &__text{
+        
+        border: none;
+        display: inline-block;
+        font-size: 12px;
+        padding: 0;
+        font-family: 'Josefin Sans';
+        color:var(--darkfontColor);
+        margin-left: 0.875rem;
+        background-color: var(---bgfont);
+
+        @include breakpoint-up(medium){
+            font-size: 14px;
+        }
+        
+    }
+
+    &__deletebtn{
+        display: inline-block;
+        background-image: 
+        url("/images/icon-cross.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        
+        width: 1.1875rem;
+        height: 1.1875rem;
+
+        @include breakpoint-up(large){
+            background-image: none;
+        }
+    }
+
+}
+
+body {
+	
+	
+	--img-url: var(--fill);
+}
+
+.fill{
+    border: none;
+  background-image: 
+      url("/images/icon-check.svg"),
+      linear-gradient(to right, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+  &:hover{
+      display: inline-block;
+      background-image: 
+      url("/images/icon-check.svg"),
+      linear-gradient(to right, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      padding: 0;
+     border: none;
+      border-width: 0.125rem;
+      
+      min-width: 1.1875rem;
+      height: 1.1875rem;
+  }  
+}
+
+
+ 
+  
+.ghost {
+    border: 1px dashed #000;
+    background-color: var(--bg);
+  }
+  
+  .custom-drag-ghost {
+    /* The original cloned element must not take place up in the page and must not be visible */
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    /* Just for appearance */
+    background-color: var(--bg);
+    border: 1px solid #e8871e;
+  }
+  
+  .hidden-drag-ghost {
+    opacity: 0;
+  }
+  
+  .transition {
+    transition: all 2s ease-out .5s; 
+    top: 0;
+  }

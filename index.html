@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/style.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="light-theme">
+  
+   <div> hey</div>
+  <section class="toDo">
+    
+
+
+    <div class="toDo__content  container">
+      <div class="toDo__grid container--pall flex flex-ai-c flex-jc-c">
+        
+          <div class="toDo__title flex flex-jc-sb flex-ai-c">
+            <h2 class="toDo__titiletext">T O D O</h2>
+            <button class="toDo__titlecta"></button>
+          </div>
+          <div class="toDo__adder flex  flex-ai-c">
+            
+            <button class="button toDo__cta1 "></button>
+         
+            <input id = "textInput" type="text" name="Hello" class="toDo__text" placeholder="Create a new todo..."></input>
+            
+          </div>
+          <section id="list"class="toDo__list">
+            
+           
+              <div id='1' class=' toDo__item container--px flex  flex-ai-c'>
+                <button href="#"class="button toDo__cta inside" id = "btn1"></button>
+              <div class="toDo__fix flex flex-jc-sb flex-ai-c inside">
+                <div class="toDo__text inside">Complete online JavaScript course</div>
+                <button href="#"class="inside button toDo__deletebtn" id="1"></button>
+              </div>
+              </div>
+              <div id='2' class=' toDo__item container--px flex  flex-ai-c'>
+                <button href="#"class="button toDo__cta inside" id = "btn2"></button>
+              <div class="toDo__fix flex flex-jc-sb flex-ai-c inside">
+                <div class="toDo__text inside">Jog around the park 3x</div>
+                <button href="#"class="inside button toDo__deletebtn" id="2"></button>
+              </div>
+              </div>
+              <div id='3' class=' toDo__item container--px flex  flex-ai-c'>
+                <button href="#"class="button toDo__cta inside" id = "btn3"></button>
+              <div class="toDo__fix flex flex-jc-sb flex-ai-c inside">
+                <div class="toDo__text inside">10 minutes meditian</div>
+                <button href="#"class="inside button toDo__deletebtn" id="3"></button>
+              </div>
+              </div>
+              <div id='4' class=' toDo__item container--px flex  flex-ai-c'>
+                <button href="#"class="button toDo__cta inside" id = "btn4"></button>
+              <div class="toDo__fix flex flex-jc-sb flex-ai-c inside">
+                <div class="toDo__text inside">Read for one hour</div>
+                <button href="#"class="inside button toDo__deletebtn" id="4"></button>
+              </div>
+              </div>
+              <div id='5' class=' toDo__item container--px flex  flex-ai-c'>
+                <button href="#"class="button toDo__cta inside" id = "btn5"></button>
+              <div class="toDo__fix flex flex-jc-sb flex-ai-c inside">
+                <div class="toDo__text inside">Pick up groceries</div>
+                <button href="#"class="inside button toDo__deletebtn" id="5"></button>
+              </div>
+              </div>
+              <div id='6' class=' toDo__item container--px flex  flex-ai-c'>
+                <button href="#"class="button toDo__cta inside" id = "btn6"></button>
+                <div class="toDo__fix flex flex-jc-sb flex-ai-c inside">
+                  <div class="toDo__text inside">Complete online JavaScript course</div>
+                  <button href="#"class="inside button toDo__deletebtn" id="6"></button>
+                </div>
+              </div>
+              
+          </section>
+          <div  class='flex flex-jc-sb flex-ai-c toDo__nomove toDo__ending ' id="endsection">
+            <div class="  toDo__items" id = "itemsleft" > 6 items left</div>
+            <div  class='  flex flex-jc-sb flex-ai-c toDo__nomove toDo__allbuttons1 '>
+              <div class="toDo__all">All</div>
+              <a class="toDo__allbtn button" id="active1">Active</a> 
+              <a  class="toDo__allbtn button" id="allcomp1">Completed</a>
+            </div>
+          
+              <a class="  toDo__clear button" id="clear"> Clear Completed </a>
+          </div>
+
+          <div  class='  flex flex-jc-sb flex-ai-c toDo__nomove toDo__allbuttons2 '>
+            <div class="toDo__all">All</div>
+            <a class="toDo__allbtn button" id="active2">Active</a> 
+            <a  class="toDo__allbtn button" id="allcomp2">Completed</a>
+          </div>
+          <div  class=' flex flex-ai-c flex-jc-c toDo__nomove toDo__footer'>
+            <div class="toDo__drag">Drag and drop to reorder list</div>
+          </div>
+        </div>
+
+    </div>
+  </section>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aaron Delgado</a>.
+  </div>
+
+  <script src="/app/js/script.js"></script>
+</body>
+</html>
